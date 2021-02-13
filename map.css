@@ -1,0 +1,6 @@
+/* Name of the file: map.css
+This updates the height of the map in the home page
+Last updated: June 9, 2020 */
+#map{
+    height: 620px;
+}

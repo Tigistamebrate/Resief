@@ -1,0 +1,117 @@
+/* Name of the file: forum.css
+This is the css page for the forum in the home page
+Last updated: June 9, 2020 */
+.button2{
+  display:inline-block;
+  padding:0.5em 3em;
+  border:0.16em solid orange;
+  margin:0 0.3em 0.3em 0;
+  box-sizing: border-box;
+  text-decoration:none;
+  text-transform:uppercase;
+  font-family:'Roboto',sans-serif;
+  font-weight:400;
+  color: orange;
+  text-align:center;
+  transition: all 0.15s;
+}
+  .button2:hover{
+    color:#DDDDDD;
+    border-color:#DDDDDD;
+  }
+  .button2:active{
+    color:#BBBBBB;
+    border-color: #BBBBBB;
+  }
+  @media all and (max-width:30em){
+    .button2{
+      display:block;
+      margin:0.4em auto;
+    }
+  }
+  body {
+    font-size: 67.5%;
+    font-family: Tahoma, sans-serif;
+  }
+    
+  p, li {
+    font-size: 1.4em;
+  }
+    
+  h1 {
+    font-size: 2.1em;
+  }
+    
+  h3 {
+    font-size: 1.6em;
+  }
+    
+  #page-wrap {
+    margin: 20px auto;
+    width: 750px;
+  }
+  .alert{
+    text-align: center;
+    padding: 10px;
+    background: #79c879;
+    color: #ffff;
+    margin-bottom: 10px;
+    display: none
+
+  }  
+  textarea#message {
+    width: 700px;
+    height: 120px;
+    border: 3px solid #cccccc;
+    padding: 5px;
+    font-family: Tahoma, sans-serif;
+    background-image: url(bg.gif);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+  }
+
+  textarea {
+    outline: none;
+    max-width: 800px;
+    font-size: 24px;
+  }
+body {font-family: Arial, Helvetica, sans-serif;}
+                
+                /* The Modal (background) */
+                .modal {
+                  display: none; /* Hidden by default */
+                  position: fixed; /* Stay in place */
+                  z-index: 1; /* Sit on top */
+                  padding-top: 100px; /* Location of the box */
+                  left: 0;
+                  top: 0;
+                  width: 100%; /* Full width */
+                  height: 100%; /* Full height */
+                  overflow: hidden; /* Enable scroll if needed */
+                  background-color: rgb(0,0,0); /* Fallback color */
+                  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+                }
+                
+                /* Modal Content */
+                .modal-content {
+                  background-color: #fefefe;
+                  margin: auto;
+                  padding: 10px;
+                  border: 5px solid #888;
+                  width: 50%;
+                }
+                
+                /* The Close Button */
+                .close {
+                  color: #aaaaaa;
+                  float: right;
+                  font-size: 28px;
+                  font-weight: bold;
+                }
+                
+                .close:hover,
+                .close:focus {
+                  color: #000;
+                  text-decoration: none;
+                  cursor: pointer;
+                }

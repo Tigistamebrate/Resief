@@ -1,0 +1,272 @@
+<!--Name of file: map.html
+	This is the html page for the home page
+	Last updated: June 9, 2020
+	Includes starrating.js, search.css, forum.css, map.css and map.js which are css and javascript files -->
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <link rel="stylesheet" href="map.css">
+        <link rel="stylesheet" type="text/css" href="search.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel = "stylesheet" href = "starrating.css">
+            <link rel = "stylesheet" href = "forum.css">
+            
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="starrating.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    </head>
+    <body>
+        
+                <div id = "bars">
+                    
+                                 <!--this is the top of the page--> 
+                                <div id = "toppage">
+                                    <div id = "top">
+
+                                        <li style="float:right"><a class="round" href="contact_us.html">Contact Us</a></li>
+                                        <li style="float:right"><a href="profile.html">Profile</a></li>
+                                        <li style="float:right"><button type = "submit" onclick = "removeit()">Sign Out</button></li>
+                                        
+                                    </div>
+                                    
+                                </div>
+                
+                    <div id = "space_creator"></div>
+
+                    <div id = "outline">
+                        <div id = "not_map">
+
+                            <!--Search Box-->
+                            <div class="location">
+
+                                <div id = "row" class="row mb-2">
+                                    <div class = "inputs" id = "col" class="col">
+                                        <img src="search.png">
+                                        <input class="form-control" id="search" type="text" placeholder="Brooklyn, New York"/> 
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                
+                <div id ="textbox">
+                    
+                    <div class = "scroll" id = "leftbox">
+                        <!-- BUTTON FOR THE POP UP-->
+
+                        <button id="myBtn" class='button2'>Add a post</button>
+                        <div id="myModal" class="modal">
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                
+                                <!--adding database info-->
+                                <p>
+                                    <div class="alert">Post Sent!</div>
+                                    <form id="posting">
+                                        <textarea name="message" id="message" wrap="off" cols="30" rows="5" placeholder="What is happening?"></textarea>
+                                        <button type ="submit" class= "button2">Post</button>
+                                    </form>
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- BUTTON ENDS HERE-->
+                        
+                        <div class = "posts" id = "post1">
+                                <div>
+                                    
+                                        <div id ="done">
+                                    
+                                </div>
+                            
+                                 
+                                <div onmouseover = "centerMap(39.9621, -75.1716)" class = "postcover">
+
+                                    <center>
+                                    <div class = "top">
+                                        <img src = "mannapic.jpg">
+                                    <div>
+                                        <p>MANNA</p>
+                                             <div class ="rating">
+                                                <span class="rating_stars rating_0">
+                                                    <span class='s' data-low='0.5' data-high='1'><i class="fa fa-star-o"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star"></i></span>
+                                                    <span class='s' data-low='1.5' data-high='2'><i class="fa fa-star-o"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star"></i></span>
+                                                    <span class='s' data-low='2.5' data-high='3'><i class="fa fa-star-o"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star"></i></span>
+                                                    <span class='s' data-low='3.5' data-high='4'><i class="fa fa-star-o"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star"></i></span>
+                                                    <span class='s' data-low='4.5' data-high='5'><i class="fa fa-star-o"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star"></i></span>
+                                                
+                                                    <span class='r r0_5' data-rating='1' data-value='0.5'></span>
+                                                    <span class='r r1' data-rating='1' data-value='1'></span>
+                                                    <span class='r r1_5' data-rating='15' data-value='1.5'></span>
+                                                    <span class='r r2' data-rating='2' data-value='2'></span>
+                                                    <span class='r r2_5' data-rating='25' data-value='2.5'></span>
+                                                    <span class='r r3' data-rating='3' data-value='3'></span>
+                                                    <span class='r r3_5' data-rating='35' data-value='3.5'></span>
+                                                    <span class='r r4' data-rating='4' data-value='4'></span>
+                                                    <span class='r r4_5' data-rating='45' data-value='4.5'></span>
+                                                    <span class='r r5' data-rating='5' data-value='5'></span>
+                                                    </span>
+
+                                                <div class="values">
+                                                    <div class = "values">
+                                                        <label hidden></label><input hidden type="text" id="rating" value="0" />
+                                                    </div>
+                                                    <div class = "values">
+                                                        <label hidden></label><input hidden type="text" name="rating" id="rating_val" value="0" />
+                                                    </div>
+                                                </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                    </center>
+
+                                    <hr class ="divider">
+
+                                    <div class = "description">
+                                      <p>MANNA uses nutrition to improve health for people with serious illnesses who need nourishment to heal. By providing medically tailored meals and nutrition education, we empower people to improve their health and quality of life.</p>
+                                    </div>
+
+                                    <center>
+                                    <div class = "piclink">
+                                    <img id  = "pic1" src = "mannavolun1.jpg">
+                                    </div>
+                                    </center>
+
+                                    <center>
+                                    <div calss = "info">
+                                      <p>1000 comments</p>
+                                    </div>
+                                    </center>
+
+                                        <hr class ="divider">
+
+                                            <div class = "bottom">
+                                                <span class = "img1"><p><img src = "up.png">Uplift</p></span>
+                                                <span class = "img2"><p><img src = "comment.png">Comment</p></span>
+                                                <span class = "img3"><p><img src = "share.png">Share</p></span>
+                                            </div>
+
+
+                              </div>
+                        </div>
+
+                    <!-- ----------------------------------------------------------------------------------- -->
+
+                        <div class = "posts" id = "post2">
+                                <div onmouseover = "centerMap(40.7827725, -73.9653627); circleMap(40.7827725, -73.9653627,1000)" class = "postcover">
+
+                                    <center>
+                                    <div class = "piclink">
+                                    <img id  = "pic2" src = "lostdog.png">
+                                    </div>
+                                    </center>
+
+                                    <center>
+                                    <div calss = "info">
+                                      <p>10 comments</p>
+                                    </div>
+                                    </center>
+
+                                    <hr class ="divider">
+                                            <div class = "bottom">
+                                                <span class = "img1"><p><img src = "up.png">Uplift</p></span>
+                                                <span class = "img2"><p><img src = "comment.png">Comment</p></span>
+                                                <span class = "img3"><p><img src = "share.png">Share</p></span>
+                                            </div>
+
+
+                              </div>
+                        </div>
+
+                        <!-- ----------------------------------------------------------------------------------- -->
+
+                        <div class = "posts" id = "post3">
+                                <div onmouseover = "centerMap(42.1860196, -79.0314869)" class = "postcover">
+
+                                    <div class = "description">
+                                      <h1 id = "contamination">Click To View It On The Map</h1>
+                                      <h1 id = "contamination">Contaminated Water</h1>
+                                    </div>
+
+                                    <center>
+                                    <div class = "slidebutton">
+                                        <label class="switch">
+                                          <input type="checkbox">
+                                          <span onclick = "circleMap(42.1860196, -79.0314869, 5000)" class="slider round"></span>
+                                        </label>
+                                    </div>
+                                    </center>
+
+                                    <center>
+                                    <div calss = "info">
+                                      <p>50 comments</p>
+                                    </div>
+                                    </center>
+
+                                       <hr class ="divider">
+
+                                            <div class = "bottom">
+                                                <span class = "img1"><p><img src = "up.png">Uplift</p></span>
+                                                <span class = "img2"><p><img src = "comment.png">Comment</p></span>
+                                                <span class = "img3"><p><img src = "share.png">Share</p></span>
+                                            </div>
+
+                              </div>
+                        </div>
+
+                        <!-- ----------------------------------------------------------------------------------- -->
+                               
+
+                    </div>
+                    </div>
+
+                <!--End of left box-->
+
+
+                <!-- ----------------------------------------------------------------------------------- -->
+                
+
+                <!--this is the right side of the page-->
+                
+                <div id = "rightbox"> 
+                    <div class="container-fluid">
+
+                            <div class="row">
+                                <div class="col">
+                                    <div id="map">
+                                    </div>
+                                </div>
+                            </div>
+
+                    </div>
+
+                </div>
+
+                <!-- ----------------------------------------------------------------------------------- -->
+ 
+        </div>
+                <!--Scripts for posting database-->
+        <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-database.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-analytics.js"></script>
+        <script src= "sketch.js"></script>
+        <script src= "postdisplay.js"></script>
+        <script src= "logout.js"></script>
+
+
+        <!--Scripts for map-->
+        <script src="map.js"></script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?callback=createMap&libraries=places&key=AIzaSyBtBYV8z5bBkIVnXpDqNWpXqLb57YuOms4"async defer></script>
+
+    </body> 
+</html>

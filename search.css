@@ -1,0 +1,468 @@
+/* Name of the file: search.css
+This is the css page for the search feature in the home page
+Last updated: June 9, 2020 */
+body{
+	background-image: url("backgroundimage.jpg");
+/*	https://hipwallpaper.com/wood-backgrounds-for-websites/*/
+	background-size: cover;
+}
+
+li button{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  float: left;
+  display: block;
+  color: white;
+  padding: 7px 7px;
+  text-decoration: none;
+  background-color: #4863A0;
+  border-radius: 25px;
+  border:3px solid black;
+}
+
+li button:hover:not(.active) {
+   border-radius: 25px;
+  border:2px solid white;
+}
+
+#outline{
+	position: relative;
+}
+
+#not_map{
+	display: block;
+	margin: 0 auto ;
+	margin-bottom: 5px;
+	padding: 10px;
+	background-color: rgb(255, 250, 240, 0.6);
+	border-radius: 10px;
+	width: 100%;
+	height: auto;
+  	top: 50%;
+}
+
+h1{
+	color: black;
+	margin: 10px;
+	padding: 5px;
+	font-family: Candara, serif;
+}
+
+#row, #col, .location{
+	display: inline-flex;
+	width: 100%;
+}
+
+.inputs{
+	border-radius: 10px;
+	width: 100%;
+	margin: 10px;
+	padding: 5px;
+	border: 3px solid white;
+}
+
+input{
+	width: 100%;
+}
+#search{
+	width: 100%;
+}
+
+
+img{
+	border-radius: 10px;
+	margin-right: 10px;
+	display: inline;
+	width: 30px;
+	height: 30px;
+}
+
+/*---------------------------------------------------------------------------------------------*/
+
+/*Left Box*/
+#leftbox {
+	margin: 10px 0 0 0 ;
+	padding: 10px;
+	width: 30%;
+	height: 580px;
+	overflow-y: scroll;
+}
+
+/*End of Left Box*/
+
+/*---------------------------------------------------------------------------------------------*/
+
+/*Boxes that contains both the left and right Box*/
+#textbox{
+	width: 100%;
+	display: inline-flex;
+}
+
+/*---------------------------------------------------------------------------------------------*/
+
+/*Right Box*/
+
+#rightbox {
+	margin: 0;
+	width: 70%;
+	height: auto;
+}
+
+.container-fluid{
+	margin: 0;
+	padding: 10px;
+	height: auto;
+}
+
+/*End of Right Box*/
+
+/*---------------------------------------------------------------------------------------------*/
+
+/*Post*/
+
+.top{
+	display: inline-flex;
+	text-align: justify;
+	width: 100%;
+}
+
+
+hr.divider {
+  border: 1px solid black;
+  display: block;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.top img{
+	margin-left: 0;
+    width: 100px;
+    height: 70px;
+}
+
+
+.top{
+    margin: 5px 5px 5px 5px;
+    padding: 5px 5px 0 5px;
+    border-radius: 0%;
+}
+
+.piclink{
+	display: inline-flex;
+}
+
+.piclink img{
+    width: 100%;
+    height: 200px;
+    border-radius: 0%
+}
+
+.piclink{
+	width: 90%;
+}
+
+
+.info p{
+    font-size: 14px;
+}
+
+
+.description p{
+    text-align: justify;
+}
+
+.description{
+    margin: 5px 5px;
+}
+
+.postcover{
+  margin: 15px 0;
+    padding: 5px;
+    background-color: rgb(255, 250, 240, 0.8);
+    width: 85%;
+    height: auto;
+    border-radius: 3%;
+
+}
+
+
+.postcover:hover{
+    box-shadow: 3px 3px 3px 3px white;
+    border-bottom: 1px solid;
+}
+
+
+.img1{
+    padding: 10px 5px 0 10px;
+    width: 23%;
+}
+
+.bottom p:hover{
+	border-radius: 5px;
+	box-shadow: 3px 3px 3px 3px white;
+}
+
+.img2{
+     padding: 10px 5px 0 10px;
+     width: 30%;
+}
+
+.img3{
+     padding: 10px 5px 0 10px;
+     width: 23%;
+}
+
+.bottom .img1 p{
+    text-align: left;
+    margin: 2px auto 2px 0;
+}
+
+.bottom .img2 p{
+    text-align: center;
+    margin: 2px auto;
+}
+
+.bottom img{
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+#pic2{
+	padding-top: 10px;
+	height: 100%
+}
+
+.bottom{
+	display: inline-flex;
+}
+
+.bottom .img3 p{
+    text-align: left;
+    margin: 2px 0 2px auto;
+}
+
+#contamination{
+	text-align: center;
+}
+
+.bottom span{
+    margin: 2px;
+    padding: 5px; 
+    display: inline-flex;
+}
+
+
+.bottom{
+    margin: 0 auto;
+    display: block;
+}
+
+/*End of Post*/
+
+/*---------------------------------------------------------------------------------------------*/
+
+/*Scroll Design*/
+.scroll::-webkit-scrollbar {
+  width: 10px;
+}
+ 
+.scroll::-webkit-scrollbar-thumb {
+  background: #666;
+  border-radius: 20px;
+}
+
+.scroll::-webkit-scrollbar-track {
+  background: #ddd;
+  border-radius: 20px;
+}
+/*End of Scroll Design*/
+
+
+
+/*top of the page*/
+
+#toppage{
+  color:white;
+  padding-top:30px;
+  min-height:70px;
+  margin-left: 0;
+  padding-left: 0;
+
+}
+
+#toppage a{
+  color:white;
+  text-decoration:none;
+  text-transform: uppercase;
+  font-size:12px;
+}
+
+#toppage li{
+  float:left;
+  display:inline;
+  padding: 0 10px 0 10px;
+}
+
+#toppage #branding{
+  float:left;
+}
+
+#toppage #branding h1{
+  margin:0;
+}
+
+#toppage nav{
+  float:left;
+  margin-top:10px;
+}
+
+#toppage .highlight, #toppage .current a{
+  color:white;
+  font-weight:bold;
+}
+
+#toppage a:hover{
+  color:#cccccc;
+  font-weight:bold;
+}
+
+.round {
+  border-radius: 25px;
+  background-color: #4863A0;
+}
+
+.round:hover{
+  color:#cccccc;
+  font-weight:bold;
+  border:2px solid white;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  padding: 7px 7px;
+  text-decoration: none;
+  background-color: #4863A0;
+  border-radius: 25px;
+  border:3px solid black;
+}
+
+li a:hover:not(.active) {
+  border-radius: 25px;
+  border:2px solid white;
+}
+
+
+#bars{
+	display: inline-flex;
+	width: 100%;
+}
+
+#space_creator{
+	width: 30%;
+}
+
+/*End of top of the page*/
+
+/*Slide button*/
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+#blank_pic{
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+#user_name{
+  font-size: 20px;
+}
+.user_name{
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+#done{
+  
+}
+
+.done{
+  
+}
+.description{
+  font-size: 15px;
+  text-align: justify;
+}

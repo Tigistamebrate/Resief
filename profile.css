@@ -1,0 +1,269 @@
+/* Name of the file: profile.css
+This is the css for the profile page
+Last updated: June 9, 2020 */
+body{
+	background-image: url("backgroundimage.jpg");
+/*	https://www.google.com/search?q=user%20profile%20background%20image%20hd&tbm=isch&tbs=isz%3Al&rlz=1C1CHBF_enUS855US855&hl=en&ved=0CAEQpwVqFwoTCIC2xMKcgugCFQAAAAAdAAAAABAC&biw=1519&bih=754#imgrc=HLFL4NpSsbQ9tM*/
+	font-family: "Brush Script MT", cursive;
+}
+
+#locationset img{
+	height: 20px;
+	width: 20px;
+}
+
+#locationset{
+	display: inline-flex;
+}
+
+#locationset p{
+	margin: 0 1px;
+	padding: 0;
+}
+
+#container{
+	margin: 40px auto;
+	padding: 10px;
+	background-color: rgb(255, 250, 240, 0.6);
+	border-radius: 10px;
+	width: 80%;
+	height: auto;
+}
+
+
+/*Right Box*/
+
+#job, #location, #locationset{
+	padding: 10px 5px 10px 0;
+	font-family:'Roboto Mono';
+}
+
+#job{
+	margin: 0 10px 15px 0;
+	padding: 0 5px 0px 0;
+	font-family:'Roboto Mono';
+}
+
+
+#rightbox {
+	margin: 10px 2px 10px auto;
+	padding: 10px;
+	width: 70%;
+	font-size: 16px;
+	font-family:'Roboto Mono';
+}
+
+#rightbox hr{
+	display: inline-flex;
+	margin:5px auto 5px 3px;;
+	width: 77%;
+	height: auto;
+	font-family:'Roboto Mono';
+}
+
+#rigthbox p, #rightbox div, #job, #location, #rightbox{
+	margin: 5px 5px 5px 10px;
+	font-family:'Roboto Mono';
+}
+
+#rightbox .smalltext{
+	width: 18%;
+}
+
+.info0 p, .info1 p, .info2 p{
+	display: inline-flex;
+	padding: 5px;
+	font-family:'Roboto Mono';
+}
+
+#email{
+	display: block
+	font-family:'Roboto Mono';
+}
+
+#options{
+	display: block;
+	font-family:'Roboto Mono';
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+
+#timeline:hover {
+	margin: 10px;
+	padding: 10px;
+	border-radius: 10%;
+ 	color: rgba(0, 0, 0, 1);
+	 box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+	
+}
+#timeline, #about{
+	margin: 10px 30px 10px 10px;
+	padding: 10px;
+	
+}
+#about:hover {
+	margin: 10px;
+	padding: 10px;
+	border-radius: 10%;
+ 	color: rgba(0, 0, 0, 1);
+ 	box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+}
+
+#options p{
+	display: inline-flex;
+	margin: 10px 10px 10px 0;
+	padding: 10px 10px 10px 0;
+}
+
+#editInfo{
+	border-radius: 10px;
+    display: block;
+    margin-top: 10px;
+    margin-left: 15px;
+    padding: 5px;
+    position: center;
+    width: 150px;
+    color: black;
+    font-weight : bold;
+    background-color: #E6E6FA;
+}
+
+/*Left Box*/
+#leftbox {
+	margin: 10px auto 10px 5px;
+	padding: 10px;
+	width: 30%;
+	height: auto;
+}
+
+ #leftbox img{
+ 	display: block;
+	margin: 5px auto;
+	padding: 5px;
+	width: 100%;
+	height: 340px;
+	border-radius: 50%;
+}
+
+#leftbox p{
+	margin: 5px auto 5px 5px;
+	padding: 5px;
+}
+
+#leftbox hr{
+	display: inline-flex;
+	margin:5px auto 5px 3px;;
+	width: 75%;
+	
+}
+
+#leftbox .smalltext{
+	width: 20%;
+}
+
+/*Boxes that contains both the left and right Box*/
+#textbox{
+	width: 100%;
+	display: inline-flex;
+	font-family:'Roboto Mono';
+}
+
+.smalltext{
+	display: inline-flex;
+	font-family: Courier New, monospace, Times, sans-serif;
+	font-size: 12px;
+	color: #696969;
+}
+
+
+/*Top of the page*/
+#toppage{
+  color:#ffffff;
+  padding-top:30px;
+  min-height:70px;
+  font-family:'Roboto Mono';
+}
+
+#toppage a{
+  color:#ffffff;
+  text-decoration:none;
+  text-transform: uppercase;
+  font-size:16px;
+}
+
+#toppage li{
+  float:left;
+  display:inline;
+  padding: 0 20px 0 20px;
+}
+
+#toppage #branding{
+  float:left;
+}
+
+#toppage #branding h1{
+  margin:0;
+}
+
+#toppage nav{
+  float:right;
+  margin-top:10px;
+}
+
+#toppage .highlight, #toppage .current a{
+  color:#e8491d;
+  font-weight:bold;
+}
+
+#toppage a:hover{
+  color:#cccccc;
+  font-weight:bold;
+}
+
+.round {
+  border:2px solid white;
+  border-radius: 25px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #4863A0;
+  border-radius: 25px;
+}
+
+li button{
+	list-style-type: none;
+	margin: 0;
+	display: block;
+	color: white;
+	padding: 14px 16px;
+	text-decoration: none;
+	border-radius: 25px;
+	background-color: transparent;
+	border: 2px solid white;
+	border-radius: 25px;
+	font-size: 16px;
+}
+
+li button:hover:not(.active) {
+  background-color: #4863A0;
+  border-radius: 25px;
+}

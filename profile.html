@@ -1,0 +1,152 @@
+<!--Name of file: profile.html
+	This is the html page for the home page
+	Last updated: June 9, 2020
+	Includes starrating.js, starrating.css, search.css, profile.css, logout.js and pulldata.js which are css and javascript files -->
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<link href = "profile.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>User's Profile</title>
+	<link rel = "stylesheet" href = "starrating.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="starrating.js"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+</head>
+
+<body>
+
+		<!--this is the top of the page--> 
+		<div id = "toppage">
+			<div id = "top">
+				<ul>
+						<li style="float:right"><a class="round" href="contact_us.html">Contact Us</a></li>
+						<li style="float:right"><a class="round" href="map.html">Home</a></li>
+						<li style="float:right"><button type = "submit" onclick = "removeit()">Sign Out</button></li>
+			</div>
+		</div>
+
+	<div id = "container">
+
+
+
+		<!--this is the left side of the page-->
+		<div id ="textbox">
+			
+				<div id = "leftbox">
+
+			<!--This is the user's profile picture-->
+					<img src = "user.png" alt = "userpic">
+
+					<span class = "smalltext"><p>WORK </p></span> <hr class ="divider">
+					<p id = "work">Software Engineer at Google</p>
+
+					<span class = "smalltext"><p>SKILLS</p></span> <hr class ="divider">
+
+					<span class = "info"><p id = "skillOne">Enter Skill One</p></span>
+					<span class = "info"><p id = "skillTwo">Enter Skill Two</p></span>
+					<span class = "info"><p id = "skillThree">Enter Skill Three</p></span>
+
+				</div>
+			
+
+		<!--end of left box-->
+
+			<!--this is the right side of the page-->
+				<div id = "rightbox"> 
+					<h1 id = "userName">Vincent</h1>
+					<div id = "locationset">
+						<img src = "location.png"><p id = "location">Enter Location</p>
+					</div>
+
+					<p id = "job">Public Employee</p>
+
+					<!--star rating-->
+					<div id ="rating">
+						<p id = "ratingword">Ratings</p>
+						<span class="rating_stars rating_0">
+  							<span class='s' data-low='0.5' data-high='1'><i class="fa fa-star-o"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star"></i></span>
+  							<span class='s' data-low='1.5' data-high='2'><i class="fa fa-star-o"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star"></i></span>
+  							<span class='s' data-low='2.5' data-high='3'><i class="fa fa-star-o"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star"></i></span>
+  							<span class='s' data-low='3.5' data-high='4'><i class="fa fa-star-o"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star"></i></span>
+  							<span class='s' data-low='4.5' data-high='5'><i class="fa fa-star-o"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star"></i></span>
+						
+  							<span class='r r0_5' data-rating='1' data-value='0.5'></span>
+  							<span class='r r1' data-rating='1' data-value='1'></span>
+  							<span class='r r1_5' data-rating='15' data-value='1.5'></span>
+  							<span class='r r2' data-rating='2' data-value='2'></span>
+  							<span class='r r2_5' data-rating='25' data-value='2.5'></span>
+  							<span class='r r3' data-rating='3' data-value='3'></span>
+  							<span class='r r3_5' data-rating='35' data-value='3.5'></span>
+  							<span class='r r4' data-rating='4' data-value='4'></span>
+  							<span class='r r4_5' data-rating='45' data-value='4.5'></span>
+  							<span class='r r5' data-rating='5' data-value='5'></span>
+							</span>
+
+						<div class="values">
+  							<div class = "values">
+    							<label hidden></label><input hidden type="text" id="rating" value="0" />
+  							</div>
+  							<div class = "values">
+    							<label hidden></label><input hidden type="text" name="rating" id="rating_val" value="0" />
+  							</div>
+						</div>
+				</div>
+
+				<!--end of star rating-->
+
+					<div id = "options">
+						<span><p>Send Message</p></span>
+						<span><p>Contacts</p></span>
+						<span><p>Report User</p></span>
+					</div>
+
+					<div id = "userinfo">
+						<span class = "smalltext"><p>CONTACT INFORMATION</p></span>
+						<hr class ="divider">
+							<span id = "email" class = "info1">
+								<p>Email:<p>
+							</span> 
+
+							<span class = "info1">
+								<p id = "emailID">hello@nonprofit.com</p>
+							</span>
+
+							<span id = "site" class = "info2">
+								<p >Site Link:</p>
+							</span> 
+
+							<span class = "info2">
+								<p id = "sitelink"></p>
+							</span>
+					</div>
+
+					<div id = "basicinfo">
+						<span class = "smalltext"><p>BASIC INFORMATION  </p></span>
+						<hr class ="divider">
+							<span class = "info0"><p>Gender:</p></span> <span class = "info0"><p id = "gender">Male</p></span>
+					</div>
+
+					<button type = "submit" id = "editInfo" onclick = "window.location.href = 'userInfo.html';">Edit User Info</button>
+
+
+		</div>
+
+
+
+	</div>
+		
+			<script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-app.js"></script>
+			<script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-database.js"></script>
+			<script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-analytics.js"></script>
+			<script src= "pulldata.js"></script>
+			<script src= "logout.js"></script>
+
+</body>
+
+</html>

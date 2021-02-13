@@ -1,0 +1,117 @@
+/* Name of the file: contact_us.css
+This is a css page for the contact us page
+Last updated: June 6, 2020 */
+body {
+    font-family:'Roboto Mono';
+    font-size: 16px;
+    background-image: url('backgroundimage.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    color: blue;
+    padding: 3px;
+    text-align: center;
+}
+
+h2{
+    font-family: 'Montserrat';
+    color: #ffffff;
+	  padding: 30px;
+    font-size: 30px;
+}
+
+form{
+    margin-top: 50px;
+    transition: all 2s ease-out;
+
+}
+
+.form-box{
+    width: 650px;
+    height: 370px;
+    position: relative;
+    margin: 6% auto;
+    background: #fff;
+    padding: 5px;
+    overflow: hidden;
+}
+
+.form-control{
+    width: 600px;
+    background: transparent;
+    border: none ;
+    outline: none;
+    border-bottom: 1px solid gray ;
+    color:orange;
+    font-size: 18px ;
+    margin-bottom: 16px;
+
+}
+form .submit
+{
+    background-color: orange ;
+    border-color: transparent;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    height: 50px;
+    margin-top: 20px
+
+}
+form .submit:hover{
+    background-color: #cc5500 ;
+    cursor: pointer;
+}
+body1{
+    height: calc(100vh-8em);
+    padding: 4em;
+    color: rgba(255, 255, 255);
+  font-family:'Roboto Mono';
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    letter-spacing: 2px;
+  }
+
+  li {
+    float: left;
+    letter-spacing: 2px;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    letter-spacing: 2px;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #4863A0;
+    border-radius: 25px;
+    letter-spacing: 2px;
+  }
+  .round {
+    border:2px solid white;
+    border-radius: 25px;
+    letter-spacing: 2px;
+  }
+span{
+  opacity: 0; 
+  transition: all 0.4s ease;
+  display: -ms-inline-grid; 
+
+}
+span.fade {
+  opacity: 1; 
+}
+ 
+input:invalid {
+  border: 2px solid red;
+}

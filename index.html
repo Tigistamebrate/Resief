@@ -1,0 +1,69 @@
+<!--Name of file: index.html
+	This is the html page for the about page
+	Last updated: June 9, 2020
+	Includes about.css and animation.js which is css and javascript file respectively -->
+<!DOCTYPE html>
+<html>
+    <head>
+      	<title>About</title>
+      	<link href="about.css" rel="stylesheet">
+
+      	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+      	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    </head>
+
+    <!-- https://www.w3schools.com/howto/howto_css_image_text.asp -->
+    <!-- https://codepen.io/hexagoncircle/pen/XWbWKwL -->
+    <body>
+        <body1>
+            		<meta charset="UTF-8">
+            		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+            		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+            <ul>
+              <li style="float:right"><a href="finallogin.html">Log in</a></li>
+			  <li style="float:right"><a href="finallogin.html">Sign Up</a></li>
+              <!--<li style="float:right"><a href="profilepage.html">User Profile</a></li>-->
+            </ul>
+
+              <div class="container">
+                <p>Reseif <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
+              <script src="animation.js"></script>
+              </div>
+              
+              <main class="page-content">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Online Help</h2>
+                  <p class="copy">If you need help for funding or raising money, online help is for you</p>
+                  <button class="btn" onclick="gotopage()">Sign in Now</button>
+                </div>
+              </div>
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Physical Help</h2>
+                  <p class="copy">If you are in need of volunteer to come and help you, physical help is for you</p>
+                  <button class="btn" onclick= "gotopage()">Sign in Now</button>
+                </div>
+              </div>
+            </main>
+            	
+            <h1>About Us</h1>
+
+             <p style='margin-left: 25%; margin-right: 25%; font-size: 18px'>Our goal is to help the people and the communities that are struggling to find help. The website will connect you with your communities than ever before. Help us bring attention to communities and locals who need our support and protection. <b>Help us, help you, and help people!</b></p>
+              <br>
+             <p style='margin-left: 25%; margin-right: 25%; font-size: 18px'>The website is a platform for creating and raising awareness. It will help bring attention to smaller problems in a community. The website drives to give people the best possible help that they can get. People may connect with their own or other communities that are facing the same problem and join forces to make the government take quick actions.</p>
+            </div>
+        </body>
+
+        <script>
+          
+          function gotopage(){
+
+            window.location.replace("finallogin.html");
+          }
+
+        </script>
+
+    </body1>
+</html>

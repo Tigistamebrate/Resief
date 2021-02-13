@@ -1,0 +1,62 @@
+<!--Name of file: finallogin.html
+	This is the html page for the login page
+	Last updated: June 9, 2020
+	Includes protectpassword.js, finallogin.css, firebaselogin.js and firebasesignup.js which are css and javascript files -->
+<html>
+    <head>
+        
+        <title>Registration Form</title>
+        <link rel="stylesheet" type="text/css" href="finallogin.css">
+        <script src= "protectpassword.js"></script>
+
+    </head>
+    <body>
+            
+            <div id = "container">
+
+            	<!-- Login -->
+
+            	<div id = "left">
+            		
+            		<form id = "login">
+
+            			<p>Login</p>
+
+            			<input type="text" name="loginUsername" id = "loginUsername" placeholder="Username">
+	            		<input type="password" name="loginPassword" id = "loginPassword" placeholder = "Password">
+	            		<input type="checkbox" class = "check" onclick = "loginFunction()"><p class = "showpass">Show Password</p>
+	            		<button type = "submit">Login</button>
+
+            		</form>
+
+            	</div>
+
+            	<!-- Sign up -->
+
+            	<div id = "right">
+            		
+            		<form id = "signup">
+
+            			<p>Signup</p>
+
+            			<input type="text" name="name" id = "name" placeholder="Full Name">
+            			<input type="text" name="signupUsername" id = "signupUsername" placeholder="Username (No Special Character)">
+            			<input type="text" name="signupEmail" id = "signupEmail" placeholder="Enter Email">
+	            		<input type="password" name="signupPassword" id = "signupPassword" placeholder="Enter Password">
+                        <input type="checkbox" class = "check" onclick = "signupFunction()"><p class = "showpass">Show Password</p>
+            			<button type= "submit" onclick = "signupForm()">Submit</button>
+            			
+            		</form>
+
+            	</div>
+
+            </div>
+
+            <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-app.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-database.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-analytics.js"></script>
+            <script src= "firebasesignup.js"></script>
+            <script src= "firebaselogin.js"></script>
+
+        </body>
+</html>

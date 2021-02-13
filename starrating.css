@@ -1,0 +1,110 @@
+/* Name of the file: starrating.css
+This is the css page for the star rating animation that we have on the home page
+Last updated: June 6, 2020 */
+.rating_stars {
+    margin-top: 0;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 200;
+    color: black;
+    position: relative;
+}
+
+
+#rating{
+  margin-top: 0;
+  padding-top: 0;
+}
+
+#ratingword{
+  margin-bottom: 0;
+  padding-bottom: 0;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.rating_stars span .fa, .rating_stars span.active-low .fa-star-o, .rating_stars span.active-high .fa-star-o{
+	display: none;
+}
+
+.rating_stars span .fa-star-o{
+	display: inline-block;
+}
+
+.rating_stars span.s.active-high .fa-star{
+	display: inline-block; color: #f2b01e;
+}
+
+.rating_stars span.s.active-low .fa-star-half-o{
+	display: inline-block; color: #f2b01e;
+}
+
+.rating_stars span.r {
+	position: absolute;
+	top: 0;
+	height: 20px;
+	width: 10px;
+	left: 0;
+}
+
+.rating_stars span.r.r0_5 {
+  left:0px;
+}
+.rating_stars span.r.r1 {
+  left:10px; 
+width: 11px;
+}
+.rating_stars span.r.r1_5 {
+  left:21px; 
+  width: 13px;
+}
+.rating_stars span.r.r2 {
+  left:34px; 
+width: 12px;
+}
+.rating_stars span.r.r2_5 {
+  left:46px; 
+width: 12px;
+}
+.rating_stars span.r.r3 {
+  left:58px; 
+width: 11px;
+}
+.rating_stars span.r.r3_5 {
+  left:69px; 
+width: 12px;
+}
+.rating_stars span.r.r4 {
+  left:81px; 
+width: 12px;
+}
+.rating_stars span.r.r4_5 {
+  left:93px; 
+width: 12px;
+}
+.rating_stars span.r.r5 {
+  left:105px; 
+width: 12px;
+}
+
+label {
+  width: 0;
+  display: inline-block; 
+  text-align: right; 
+  margin-right: 0;
+}
+input {
+  width: 0; 
+text-align: center;
+}
+.values {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  width: 0;
+}
+.info {
+  width: 0; 
+  margin: 0;
+  padding: 0;
+}

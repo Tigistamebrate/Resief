@@ -1,0 +1,53 @@
+
+body{
+	background-image: url("backgroundimage.jpg");
+/*	https://hipwallpaper.com/wood-backgrounds-for-websites/*/
+	background-size: cover;
+}
+
+#outline{
+	position: relative;
+}
+
+
+#not_map{
+	display: block;
+	margin: 10px auto;
+	padding: 10px;
+	background-color: rgb(255, 250, 240, 0.6);
+	border-radius: 10px;
+	width:30%;
+	height: auto;
+  	top: 50%;
+}
+
+h1{
+	color: black;
+	margin: 10px;
+	padding: 5px;
+	font-family: Candara, serif;
+}
+
+#row, #col, .location{
+	display: inline-flex;
+}
+
+.inputs{
+	border-radius: 10px;
+	display: inline-flex;
+	width: auto;
+	margin: 10px;
+	padding: 5px;
+	border: 3px solid white;
+}
+img{
+	border-radius: 10px;
+	margin-right: 10px;
+	display: inline;
+	width: 30px;
+	height: 30px;
+}
+
+#map{
+    height: 620px;
+}
