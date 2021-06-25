@@ -1,3 +1,3 @@
 # Resief
 This website is made to bring attention to smaller communities. 
-Link to website: https://resief-b349b.web.app/map.html
+Link to website: https://resief-b349b.web.app/map.html NOTE: Use chrome for best user experience. 
